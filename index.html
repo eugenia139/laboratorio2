@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Laboratorio Eugenia Iturria</title>
+</head>
+
+<body>
+<form>
+<h1>Formulario de Registro</h1>
+<div class="card">
+<!---------------------------------------------------------> 
+    <p>Nombre de Usuario: </p>
+        <input type="text" name="usuario" value="" class="caja"/><br>
+<!---------------------------------------------------------> 
+    <p>Contraseña: </p>
+        <input type="password" name="contrasena" value="" class="caja" /><br> 
+<!---------------------------------------------------------> 
+    <p>Confirmar Contraseña: </p>
+        <input type="password" name="confirmar" value="" class="caja" /><br> 
+<!---------------------------------------------------------> 
+    <p>Teléfono: </p>
+        <input type="tel" name="telefono" value="" class="caja" pattern="[0-9]{9}"/><br>
+<!---------------------------------------------------------> 
+    <p>Correo Electrónico: </p>
+        <input type="email" name="email" value="" class="caja" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/><br>
+<!--------------------------------------------------------->   
+        <input type="submit" value="Enviar" id="boton" onclick="validarFormulario()"/>
+    <br>
+<!---------------------------------------------------------> 
+</div>
+  
+</form>
+</body>
+</html>
