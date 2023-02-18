@@ -48,12 +48,14 @@ function validarFormulario() {
     email.classList.add("correcto");
   }
 
-  // Comprobar si todos los campos están completos
-  if (usuario.value !== "" && contrasena.value !== "" && confirmar.value !== "" && confirmar.value === contrasena.value && telefono.checkValidity() && email.checkValidity()) {
+  // Comprobar si todos los campos están completos y coinciden
+  if (usuario.value !== "" && contrasena.value !== "" && confirmar.value !== "" && telefono.value !== "" && email.value !== "" && confirmar.value === contrasena.value && telefono.checkValidity() && email.checkValidity()) {
     alert("Se ha rellenado correctamente.");
     }
     else {
     alert("Por favor, completa correctamente todos los campos.");     
     }
 }
+
+
 
